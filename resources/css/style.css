@@ -74,7 +74,7 @@ h2:after {
 .long-cpy {
     width: 70%;
     margin-left: 15%;
-    margin-right: 15;
+    margin-right: 15%;
 }
 
 .box p {
@@ -187,8 +187,20 @@ header {
 }
 
 /*---------------------------------------*/
+/* FEATURES */
+/*---------------------------------------*/
+.sect-features .long-cpy {
+    margin-bottom: 5%;
+}
+
+
+/*---------------------------------------*/
 /* MEALS */
 /*---------------------------------------*/
+
+.section-meals {
+    padding: 0;
+}
 .meals-showcase {
     list-style: none;
     width: 100%;
@@ -204,9 +216,54 @@ header {
 .meal-photo {
     width: 100%;
     margin: 0;
+    overflow: hidden; /* deals with overflow from img */
+    background: #000
 }
 
-.meal-photo img {
+.meal-photo img{
     width: 100%; /* will ensure the image is exactly as wide as its container*/
     height: auto;
+    transform: scale(1.15); /* this creates an image at scale of 115%. causes image to overlow container */ 
+    transition: transform 0.5s;
+    opacity: 0.7 /*specifies transparency of element, used with background color to make image darker */
+}
+
+.meal-photo img:hover {
+    transform: scale(1.04); /* adds effect on hover zooms out to original size*/
+    opacity: 1; /*Makes image solid on hover*/
+}
+
+/*---------------------------------------*/
+/* HOW IT WORKS */
+/*---------------------------------------*/
+
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+}
+
+.app-screen {
+    width: 45%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }

@@ -246,6 +246,9 @@ header {
 /* HOW IT WORKS */
 /*---------------------------------------*/
 
+.section-steps {
+    background-color: #f4f4f4
+}
 
 .steps-box:first-child {
     text-align: right;

@@ -237,9 +237,6 @@ header {
 /* HOW IT WORKS */
 /*---------------------------------------*/
 
-.steps-box {
-    margin-top: 30px;
-}
 
 .steps-box:first-child {
     text-align: right;
@@ -261,9 +258,6 @@ header {
 .works-step div {
     color: #e67e22;
     border: 2px solid #e67e22;
-    display: inline-block;
     border-radius: 50%;
     height: 50px;
-    width: 50px;
-    text-align: center;
 }

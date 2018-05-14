@@ -104,9 +104,30 @@ h2:after {
     text-align: center;
     color: #e67e22;
     font-size: 120%;
+    vertical-align: top;
+    /*secret to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -6px; /* takes away the margin of icon.*/
+    margin-right: 10px;
 
 }
 
+/* ----- LINKS -----*/
+a:link,
+a:visited, {
+    text-decoration: none;
+    color: red;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
 
 /* ----- BUTTONS -----*/
 /*conditional button display: unclicked and clicked button*/

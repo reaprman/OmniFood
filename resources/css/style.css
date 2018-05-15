@@ -181,6 +181,7 @@ header {
     background-size: cover;      /*lets browser know to show the whole image*/
     background-position: center; /* centers image in webpage window */
     height: 100vh; /*100vh: means 100% viewport*/
+    background-attachment: fixed;
 }
 
 /*centers html box*/
@@ -339,4 +340,15 @@ header {
 
 .city-feature {
     margin-bottom: 5px;
+}
+
+/*---------------------------------------*/
+/* TESTIMONIALS */
+/*---------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed; /*creates a scroll affect against the background immage keeping it in place when you scoll*/
 }

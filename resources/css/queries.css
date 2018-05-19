@@ -20,6 +20,12 @@
         margin-left: 10%;
     }
 
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px;}
+    .works-step { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px }
+
+    .app-screen {width: 55%;}
 }
 
 /* big tablets to 1200p: (width smaller than the 1140 px row */

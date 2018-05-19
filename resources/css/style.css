@@ -316,13 +316,11 @@ header {
     margin-right: 25px;
 }
 
-.works-step:last-of-type {
-    margin-bottom: 80px
-}
+.works-step:last-of-type { margin-bottom: 80px }
+
 .btn-app:link,
-.btn-app:visited {
-    border: 0;
-}
+.btn-app:visited { border: 0; }
+
 .btn-app img {
     height: 50px;
     width: auto;

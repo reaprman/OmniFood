@@ -18,4 +18,13 @@
 /* big tablets to 1200p: (width smaller than the 1140 px row */
 @media only screen and (max-width : 1200px) {
 
+    /*centers html box*/
+.hero-txt-box {
+    position: absolute; 
+    width: 100%;
+    padding: 0 2%;
+    transform: translate(-50%, -50%);
+}
+
+.row {padding: 0 2%;}
 }

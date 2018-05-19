@@ -81,6 +81,7 @@ h2:after {
 
 /* ----- PARAGRAPHS -----*/
 .long-cpy {
+    line-height: 145%;
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
@@ -234,18 +235,15 @@ header {
 /*---------------------------------------*/
 /* FEATURES */
 /*---------------------------------------*/
-.sect-features .long-cpy {
-    margin-bottom: 5%;
-}
+.sect-features .long-cpy { margin-bottom: 5%; }
 
 
 /*---------------------------------------*/
 /* MEALS */
 /*---------------------------------------*/
 
-.section-meals {
-    padding: 0;
-}
+.section-meals { padding: 0;}
+
 .meals-showcase {
     list-style: none;
     width: 100%;

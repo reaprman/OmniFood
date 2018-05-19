@@ -12,19 +12,26 @@
 
 /* small tablets to big tablet: 768 to 1023px */
 @media only screen and (max-width : 1023px) {
+    body {font-size: 18px;}
+    section {padding: 60px 0;}
+
+    .long-cpy {
+        width: 80%;
+        margin-left: 10%;
+    }
 
 }
 
 /* big tablets to 1200p: (width smaller than the 1140 px row */
 @media only screen and (max-width : 1200px) {
 
-    /*centers html box*/
-.hero-txt-box {
-    position: absolute; 
-    width: 100%;
-    padding: 0 2%;
-    transform: translate(-50%, -50%);
-}
+        /*centers html box*/
+    .hero-txt-box {
+        position: absolute; 
+        width: 100%;
+        padding: 0 2%;
+        transform: translate(-50%, -50%);
+    }
 
-.row {padding: 0 2%;}
+    .row {padding: 0 2%;}
 }

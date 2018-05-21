@@ -5,7 +5,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html,
@@ -123,6 +124,7 @@ a:visited {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 2px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -142,6 +144,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px; /*creates rounded button*/
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s; /*now background colors on buttons will not change instantly*/
 }
 
@@ -184,6 +187,7 @@ input[type=submit]:active {
 /***************************************/
 
 header {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.705)),to(rgba(0, 0, 0, 0.705))), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)), url(img/hero.jpg);   /*sets background image of html section with color contrast*/
     background-size: cover;      /*lets browser know to show the whole image*/
     background-position: center; /* centers image in webpage window */
@@ -197,7 +201,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -225,6 +230,7 @@ header {
     text-transform: uppercase;
     font-size: 90%; /* sets to 90% of html font-size */
     border-bottom: 2px solid transparent; /*Creates border but hides it. Necessary for hover section*/
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
     padding: 8px 0px; /*adds space for underline on hover*/
 }
@@ -268,13 +274,18 @@ header {
 .meal-photo img{
     width: 100%; /* will ensure the image is exactly as wide as its container*/
     height: auto;
-    transform: scale(1.15); /* this creates an image at scale of 115%. causes image to overlow container */ 
-    transition: transform 0.5s;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); /* this creates an image at scale of 115%. causes image to overlow container */ 
+    -webkit-transition: -webkit-transform 0.5s; 
+    transition: -webkit-transform 0.5s; 
+    transition: transform 0.5s; 
+    transition: transform 0.5s, -webkit-transform 0.5s;
     opacity: 0.7 /*specifies transparency of element, used with background color to make image darker */
 }
 
 .meal-photo img:hover {
-    transform: scale(1.04); /* adds effect on hover zooms out to original size*/
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04); /* adds effect on hover zooms out to original size*/
     opacity: 1; /*Makes image solid on hover*/
 }
 
@@ -349,6 +360,7 @@ header {
 /*---------------------------------------*/
 
 .section-testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.801)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-size: cover;
     color: #fff;
@@ -398,7 +410,8 @@ cite img {
     width: 90%;
     margin-left: 5%;
     /*border: 1px solid #000;*/
-    box-shadow: 0 2px 2px rgb(224, 223, 223)
+    -webkit-box-shadow: 0 2px 2px rgb(224, 223, 223);
+            box-shadow: 0 2px 2px rgb(224, 223, 223)
 }
 
 .plan-box div {
@@ -507,6 +520,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -531,6 +545,7 @@ footer p {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 

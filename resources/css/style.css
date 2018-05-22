@@ -205,13 +205,16 @@ header {
             transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo,
+.logo-black {
     margin-top: 20px;
     height: 100px;
     width: auto;
     float: left; /*aligns photo to the left of main-nav on first line*/
 }
+.logo-black { display: none; }
 
+/* Main navi */
 .main-nav {
     float: right; /*aligns main-nav to the right of photo on first line*/
     list-style: none;
@@ -239,6 +242,24 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
+/* Sticky navi*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(233, 233, 233)
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 8px 0px; /*adds space for underline on hover*/
+}
+
+.sticky .logo-black { display: block; }
+.sticky .logo { display: none; }
 
 /*---------------------------------------*/
 /* FEATURES */

@@ -205,14 +205,19 @@ header {
             transform: translate(-50%, -50%);
 }
 
-.logo,
-.logo-black {
-    margin-top: 20px;
-    height: 100px;
+.logo {
+    margin-top: 5px;
+    height: 500px;
     width: auto;
     float: left; /*aligns photo to the left of main-nav on first line*/
 }
-.logo-black { display: none; }
+.logo-black { 
+    display: none;
+    margin: 5px 0;
+    height: 50px;
+    width: auto;
+    float: left;
+ }
 
 /* Main navi */
 .main-nav {
@@ -249,13 +254,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(233, 233, 233)
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0 2px 2px rgb(235, 235, 235)
 }
+
+.sticky .main-nav { margin-top: 18px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     color: #555;
-    padding: 8px 0px; /*adds space for underline on hover*/
+    padding: 18px 0px; /*adds space for underline on hover*/
 }
 
 .sticky .logo-black { display: block; }

@@ -255,7 +255,8 @@ header {
     left: 0;
     width: 100%;
     background-color: rgb(233, 233, 233);
-    box-shadow: 0 2px 2px rgb(235, 235, 235)
+    box-shadow: 0 2px 2px rgb(235, 235, 235);
+    z-index: 9999; /* defines vertical stacking of elements 9999 is highest possible value. */
 }
 
 .sticky .main-nav { margin-top: 18px; }

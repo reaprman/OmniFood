@@ -594,3 +594,15 @@ footer p {
 .ion-social-instagram:hover {
     color: #517fa4;
 }
+
+/*---------------------------------------*/
+/* ANIMATIONS */
+/*---------------------------------------*/
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+.js--wp-1.animated {
+    opacity: 1;
+}

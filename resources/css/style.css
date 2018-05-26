@@ -187,12 +187,12 @@ input[type=submit]:active {
 /***************************************/
 
 header {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.705)),to(rgba(0, 0, 0, 0.705))), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)), url(img/hero.jpg);   /*sets background image of html section with color contrast*/
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.705)),to(rgba(0, 0, 0, 0.705))), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)), url(img/hero-min.jpg);   /*sets background image of html section with color contrast*/
     background-size: cover;      /*lets browser know to show the whole image*/
     background-position: center; /* centers image in webpage window */
     height: 100vh; /*100vh: means 100% viewport*/
-    background-attachment: fixed;
+    background-attachment: fixed; /* fixes background in place while scrolling */
 }
 
 /*centers html box*/
@@ -405,8 +405,8 @@ header {
 /*---------------------------------------*/
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.801)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.801)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed; /*creates a scroll affect against the background immage keeping it in place when you scoll*/

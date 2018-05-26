@@ -248,6 +248,20 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile navi */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer; /*element is not a link element so cursor does not auto change. manual style change required */
+    display: none;
+}
+
+.mobile-nav-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky navi*/
 .sticky {
     position: fixed;
@@ -255,7 +269,8 @@ header {
     left: 0;
     width: 100%;
     background-color: rgb(233, 233, 233);
-    box-shadow: 0 2px 2px rgb(235, 235, 235);
+    -webkit-box-shadow: 0 2px 2px rgb(235, 235, 235);
+            box-shadow: 0 2px 2px rgb(235, 235, 235);
     z-index: 9999; /* defines vertical stacking of elements 9999 is highest possible value. */
 }
 
@@ -599,10 +614,22 @@ footer p {
 /* ANIMATIONS */
 /*---------------------------------------*/
 
-.js--wp-1 {
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
     opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 
-.js--wp-1.animated {
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
     opacity: 1;
 }

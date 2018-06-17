@@ -53,7 +53,7 @@ ul {
 }
 
 .header__inner {
-  width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,7 +72,6 @@ ul {
   display: inline-block;
   color: #212121;
 }
-
 
 /*
  *
